@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>城市列表</title>
+    <link rel="stylesheet" type="text/css" href="../css/maty.css">
+
+    <!-- 地址样式 -->
+    <link rel="stylesheet" type="text/css" href="address.css">
+    <!-- 网格布局 -->
+    <link rel="stylesheet" type="text/css" href="../grid/grid.css">
+    <style>
+    	/*共用样式重定义*/
+    	h4.h4{margin-left: .3rem;margin-right: .3rem;}
+
+    	.m-address{height: 83vh;}
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">(function appVersion(){window.platform={};var ua=window.navigator.userAgent.toLowerCase();var isIphone=ua.match(/iphone os/i)=="iphone os";var isAndroid=ua.match(/android/i)=="android";var isMobile=ua.match(/mobile/i)=="mobile";var isIpad=ua.match(/ipad/)=="ipad";platform.isMobile=function(){return isMobile&&!isIpad};if(platform.isMobile()){(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window)}})();
+    </script>
+
+    <header class="header">
+        <a href="../index.html" class="back">index</a>
+        <h1 class="h1">城市列表 <small>m-name</small></h1>
+    </header>
+    <!-- /header -->
+    <section class="section" style="padding: .99rem 0 0;">
+        <h4 class="h4">常规</h4>
+        <div id="address">
+    		<div class="m-address">
+    			<div class="addr-list">
+    				<ul class="list">
+						<li class="m-flexbox title"><span class-="flex1">A</span></li>
+						<li class="m-flexbox"><span class="flex-1">鞍山</span></li>
+						<li class="m-flexbox"><span class="flex-1">安顺</span></li>
+						<li class="m-flexbox"><span class="flex-1">阿坝</span></li>
+						<li class="m-flexbox"><span class="flex-1">阿拉善</span></li>
+						<li class="m-flexbox"><span class="flex-1">阿里</span></li>
+						<li class="m-flexbox"><span class="flex-1">安康</span></li>
+						<li class="m-flexbox"><span class="flex-1">阿克苏</span></li>
+						<li class="m-flexbox"><span class="flex-1">安庆</span></li>
+						<li class="m-flexbox"><span class="flex-1">阿勒泰</span></li>
+						<li class="m-flexbox"><span class="flex-1">安阳</span></li>
+						<li class="m-flexbox"><span class="flex-1">澳门</span></li>
+					</ul>
+
+					<ul class="list">
+						<li class="m-flexbox title"><span class-="flex1">B</span></li>
+						<li class="m-flexbox"><span class="flex-1">北京</span></li>
+						<li class="m-flexbox"><span class="flex-1">包头</span></li>
+						<li class="m-flexbox"><span class="flex-1">保定</span></li>
+						<li class="m-flexbox"><span class="flex-1">巴中</span></li>
+						<li class="m-flexbox"><span class="flex-1">白银</span></li>
+						<li class="m-flexbox"><span class="flex-1">白城</span></li>
+						<li class="m-flexbox"><span class="flex-1">白山</span></li>
+						<li class="m-flexbox"><span class="flex-1">北海</span></li>
+						<li class="m-flexbox"><span class="flex-1">巴彦淖尔</span></li>
+						<li class="m-flexbox"><span class="flex-1">宝鸡</span></li>
+						<li class="m-flexbox"><span class="flex-1">百色</span></li>
+						<li class="m-flexbox"><span class="flex-1">本溪</span></li>
+						<li class="m-flexbox"><span class="flex-1">保山</span></li>
+						<li class="m-flexbox"><span class="flex-1">毕节</span></li>
+						<li class="m-flexbox"><span class="flex-1">博尔塔拉</span></li>
+						<li class="m-flexbox"><span class="flex-1">滨州</span></li>
+						<li class="m-flexbox"><span class="flex-1">亳州</span></li>
+						<li class="m-flexbox"><span class="flex-1">巴州</span></li>
+					</ul>
+    			</div>
+    			<ul class="addr-bar">
+					<li>A</li>
+					<li>B</li>
+					<li>C</li>
+					<li>D</li>
+					<li>E</li>
+					<li>F</li>
+					<li>G</li>
+					<li>H</li>
+					<li>I</li>
+					<li>J</li>
+					<li>K</li>
+					<li>L</li>
+					<li>M</li>
+					<li>N</li>
+					<li>O</li>
+					<li>P</li>
+					<li>Q</li>
+					<li>R</li>
+					<li>S</li>
+					<li>T</li>
+					<li>U</li>
+					<li>V</li>
+					<li>W</li>
+					<li>X</li>
+					<li>Y</li>
+					<li>Z</li>
+    			</ul>
+    		</div>
+		</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*
+	// @ Css name：单选
+	// @ Author： matianye@
+	// @ Date： 2017-06-19
+	//==========================
+*/
+
+.m-radio{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	font-size: 0;
+	line-height: 1;
+}
+.m-radio input{
+	display: none;
+}
+/*模拟的空心圆*/
+.m-radio .r-icn{
+	position: relative;
+	display: inline-block;
+	margin-right: .16rem;
+	overflow: hidden;
+	vertical-align: middle;
+	width: .36rem;
+	height: .36rem;
+	border: 1px solid #999;
+	-webkit-border-radius: .36rem;
+	border-radius: .36rem;
+}
+/*点击后的小圆点*/
+.m-radio .r-icn:before{
+	content: " ";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 50%;
+	height: 50%;
+	display: none;
+	background-color: #fff;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.m-radio .r-tit{
+	vertical-align: middle;
+	font-size: .28rem;
+	line-height: .4rem;
+}
+/*点击后的样式*/
+.m-radio input[type="radio"]:checked + .r-icn{
+	border-color: #ff5c5c;
+	background-color: #ff5c5c;
+}
+/*点击后小圆点现实*/
+.m-radio input[type="radio"]:checked + .r-icn:before{
+	display: block;
+}
+/*禁用样式*/
+.m-radio input[type="radio"][disabled="disabled"] + .r-icn{
+	border-color: #F4CCCC;
+	background: none;
+}
+/*禁用文字颜色*/
+.m-radio input[type="radio"][disabled="disabled"] + .r-icn ~ .r-tit{
+	color: #999;
+}
+/*选择的禁用*/
+.m-radio input[type="radio"][disabled="disabled"][checked="checked"] + .r-icn{
+	border-color: #F4CCCC	;
+	background-color: #F4CCCC;
+}
+.m-radio input[type="radio"][disabled="disabled"][checked="checked"] + .r-icn:before{
+	display: block;
+}
+
+/*icn右侧现实*/
+.m-radio.fr{
+	padding-right: .6rem;
+}
+.m-radio.fr .r-icn{
+	position: absolute;
+	right: 0;
+}
+/*块级元素*/
+ .m-radio.display{
+	padding-left: .5rem;
+	display: block;
+	overflow: hidden;
+}
+.m-radio.display .r-icn{
+	margin-left: -.5rem;
+	float: left;
+}

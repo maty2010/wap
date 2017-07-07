@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>按钮</title>
+    <link rel="stylesheet" type="text/css" href="../css/maty.css">
+    <style>
+    	/*按钮样式*/
+		.m-btn-white	,
+		.m-btn-danger	,
+		.m-btn-warning	,
+		.m-btn-primary	,
+		.m-btn-success	,
+		.m-btn-royal{
+    		position: relative;
+			padding: .2rem .3rem;
+			display: inline-block;
+			min-width: 1.8rem;
+			color: #fff;
+			font-size: .26rem;
+			line-height: 1;
+			text-align: center;
+			vertical-align: top;
+			border: 1px solid transparent;
+			-webkit-border-radius: .6rem;
+			border-radius: .6rem;
+		    -webkit-background-origin: border-box;
+		    background-origin: border-box;
+    	}
+
+        /*背景颜色*/
+		.m-btn-white	{color:#333;background-color: #fff;}
+		.m-btn-danger	{background-color: #dd524d;}
+		.m-btn-warning	{background-color: #f0ad4e;}
+		.m-btn-primary	{background-color: #007aff;}
+		.m-btn-success	{background-color: #4cd964;}
+		.m-btn-royal	{background-color: #8a6de9;}
+
+		/*块级元素*/
+		.m-btn-white.block ,	
+		.m-btn-danger.block ,
+		.m-btn-warning.block ,	
+		.m-btn-primary.block ,
+		.m-btn-success.block ,
+		.m-btn-royal.block {
+			display: block;
+		}
+
+        /*边框无背景色*/
+        .m-btn-white.border ,	
+		.m-btn-danger.border ,
+		.m-btn-warning.border ,	
+		.m-btn-primary.border ,
+		.m-btn-success.border ,
+		.m-btn-royal.border 	{ background: none;}
+        .m-btn-white.border 	{color: #333;border-color: #666;}
+        .m-btn-danger.border	{color: #dd524d;border-color: #dd524d;}
+        .m-btn-warning.border	{color: #f0ad4e;border-color: #f0ad4e;}
+        .m-btn-primary.border	{color: #007aff;border-color: #007aff;}
+        .m-btn-success.border	{color: #4cd964;border-color: #4cd964;}
+        .m-btn-royal.border		{color: #8a6de9;border-color: #8a6de9;}
+        
+        /*直角*/
+        .m-btn-white.square ,	
+		.m-btn-danger.square ,
+		.m-btn-warning.square ,	
+		.m-btn-primary.square ,
+		.m-btn-success.square ,
+		.m-btn-royal.square { border-radius: 0;}
+		
+		/*大按钮*/
+		.m-btn-white.large ,	
+		.m-btn-danger.large ,
+		.m-btn-warning.large ,	
+		.m-btn-primary.large ,
+		.m-btn-success.large ,
+		.m-btn-royal.large 	{
+			padding: .26rem .4rem;
+			font-size: .34rem;
+		}
+
+		/*小按钮*/
+		.m-btn-white.small ,	
+		.m-btn-danger.small ,
+		.m-btn-warning.small ,	
+		.m-btn-primary.small ,
+		.m-btn-success.small ,
+		.m-btn-royal.small 	{
+			padding: .14rem .2rem;
+			font-size: .20rem;
+		}
+
+
+    </style>
+</head>
+
+<body style="background:#e9e9e9;">
+	<script type="text/javascript">(function appVersion(){window.platform={};var ua=window.navigator.userAgent.toLowerCase();var isIphone=ua.match(/iphone os/i)=="iphone os";var isAndroid=ua.match(/android/i)=="android";var isMobile=ua.match(/mobile/i)=="mobile";var isIpad=ua.match(/ipad/)=="ipad";platform.isMobile=function(){return isMobile&&!isIpad};if(platform.isMobile()){(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window)}})();
+	</script>
+
+    <header class="header">
+        <a href="../index.html" class="back">index</a>
+        <h1 class="h1">按钮类 <small>m-name</small></h1>
+    </header>
+    <!-- /header -->
+    <section class="section">
+        <h4 class="h4">有背景</small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-white">白色按钮</a>
+			<a href="##btn" class="m-btn-danger">红色按钮</a>
+			<a href="##btn" class="m-btn-warning">黄色按钮</a>
+			<a href="##btn" class="m-btn-primary">蓝色按钮</a>
+			<a href="##btn" class="m-btn-success">绿色按钮</a>
+			<a href="##btn" class="m-btn-royal">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">有边框无背景  <small>addClass="border" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-danger border">红色常规按钮</a>
+			<a href="##btn" class="m-btn-warning border">黄色按钮</a>
+			<a href="##btn" class="m-btn-primary border">红色按钮</a>
+		</div>
+
+		<h4 class="h4">直角有背景 <small>addClass="square" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-warning square">黄色按钮</a>
+			<a href="##btn" class="m-btn-success square">绿色按钮</a>
+			<a href="##btn" class="m-btn-royal square">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">直角有边框 <small>addClass="border square" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-warning border square">黄色按钮</a>
+			<a href="##btn" class="m-btn-success border square">绿色按钮</a>
+			<a href="##btn" class="m-btn-royal border square">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">块级有背景 <small>addClass="block" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-white block">白色按钮</a>
+		</div>
+
+		<h4 class="h4">块级有边框 <small>addClass="block border" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-warning block border">黄色按钮</a>
+		</div>
+
+		<h4 class="h4">块级直角+背景 <small>addClass="block square" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-success block square">绿色按钮</a>
+		</div>
+
+		<h4 class="h4">大按钮 <small>addClass="large" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-danger large">黄色按钮</a>
+			<a href="##btn" class="m-btn-warning border large">黄色按钮</a>
+			<a href="##btn" class="m-btn-success square large">绿色按钮</a>
+			<a href="##btn" class="m-btn-royal block large">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">小按钮 <small>addClass="large" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-danger large">黄色按钮</a>
+			<a href="##btn" class="m-btn-warning border large">黄色按钮</a>
+			<a href="##btn" class="m-btn-success square large">绿色按钮</a>
+			<a href="##btn" class="m-btn-royal block large">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">小按钮 <small>addClass="large" </small></h4>
+		<div id="button">
+			<a href="##btn" class="m-btn-danger small">黄色按钮</a>
+			<a href="##btn" class="m-btn-warning border small">黄色按钮</a>
+			<a href="##btn" class="m-btn-success square small">绿色按钮</a>
+			<a href="##btn" class="m-btn-royal block small">紫色按钮</a>
+		</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+</body>
+</html>

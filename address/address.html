@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>城市列表</title>
+    <link rel="stylesheet" type="text/css" href="../css/maty.css">
+    
+    <!-- 地址样式 -->
+    <link rel="stylesheet" type="text/css" href="address.css">
+    <!-- 单选样式 -->
+    <link rel="stylesheet" type="text/css" href="../radio/radio.css">
+    <!-- 多选样式 -->
+    <link rel="stylesheet" type="text/css" href="../checkbox/checkbox.css">
+    <!-- 网格布局 -->
+    <link rel="stylesheet" type="text/css" href="../grid/grid.css">
+    <style>
+    	/*共用样式重定义*/
+    	h4.h4{margin-left: .3rem;margin-right: .3rem;}
+
+		/*重定义单选在右侧样式*/
+        .m-address .fr.m-flexbox{
+        	/*margin-right: .3rem;*/
+        }
+        .m-address .fr.m-flexbox:after{
+        	display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">(function appVersion(){window.platform={};var ua=window.navigator.userAgent.toLowerCase();var isIphone=ua.match(/iphone os/i)=="iphone os";var isAndroid=ua.match(/android/i)=="android";var isMobile=ua.match(/mobile/i)=="mobile";var isIpad=ua.match(/ipad/)=="ipad";platform.isMobile=function(){return isMobile&&!isIpad};if(platform.isMobile()){(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window)}})();
+    </script>
+
+    <header class="header">
+        <a href="../index.html" class="back">index</a>
+        <h1 class="h1">城市列表 <small>m-name</small></h1>
+    </header>
+    <!-- /header -->
+    <section class="section" style="padding-left: 0; padding-right: 0;">
+        <h4 class="h4">常规</h4>
+        <div id="address">
+            <ul class="m-address">
+                <li class="m-flexbox"><span class="flex-1">北京</span></li>
+                <li class="m-flexbox"><span class="flex-1">天津</span></li>
+                <li class="m-flexbox"><span class="flex-1">河北省</span></li>
+                <li class="m-flexbox"><span class="flex-1">山西省</span></li>
+                <li class="m-flexbox"><span class="flex-1">内蒙古</span></li>
+                <li class="m-flexbox"><span class="flex-1">上海</span></li>
+                <li class="m-flexbox"><span class="flex-1">浙江省</span></li>
+                <li class="m-flexbox"><span class="flex-1">江苏省</span></li>
+                <li class="m-flexbox"><span class="flex-1">安徽省</span></li>
+                <li class="m-flexbox"><span class="flex-1">福建省</span></li>
+            </ul>
+		</div>
+
+		<h4 class="h4">复选地址</h4>
+        <div id="address">
+            <div class="m-address">
+            	<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">山东省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">广东省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">海南省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">湖北省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">湖南省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">河南省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">江西省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">吉林省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">辽宁省</span>
+				</label>
+				<label class="m-checkbox m-flexbox">
+					<input type="checkbox" name="1" value="1">
+					<span class="c-icn"></span>
+					<span class="c-tit flex-1">宁夏</span>
+				</label>
+            </div>
+		</div>
+
+		<h4 class="h4">单选地址</h4>
+        <div id="address">
+            <div class="m-address">
+            	<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">新疆</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">青海省</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">陕西省</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">甘肃省</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">四川省</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">云南省</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">贵州省</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">重庆市</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">西藏</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">台湾省</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">香港</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">澳门</span>
+				</label>
+				<label class="m-radio fr m-flexbox">
+					<input type="radio" name="1" value="1">
+					<span class="r-icn"></span>
+					<span class="r-tit flex-1">钓鱼岛</span>
+				</label>
+            </div>
+		</div>
+    </section>
+</body>
+</html>

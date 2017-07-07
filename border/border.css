@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*
+	// @ Css name：边框
+	// @ Author： matianye@
+	// @ Date： 2017-06-22
+	//==========================
+*/
+[class^="m-bor-"]{
+	position: relative;
+}
+
+/*上、下边框*/
+.m-bor-t:before,
+.m-bor-b:after{
+    position:absolute;
+    content: "";
+    height:1px;
+    background: #dddddd;
+    left:0;
+    right:0;
+}
+.m-bor-t:before{
+    top:0;
+}
+.m-bor-b:after{
+    bottom:0;
+}
+
+/*左、右边框*/
+.m-bor-l:before,
+.m-bor-r:after{
+    position:absolute;
+    content: "";
+    width:1px;
+    background: #dddddd;
+    top:0;
+    bottom:0;
+}
+.m-bor-l:before{
+    left:0;
+}
+.m-bor-r:after{
+    right:0;
+}
+
+/*上下左右边框*/
+.m-bor-all:after{
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:1px solid #dddddd;
+    point-events:none;
+}
+
+@media 	(min--moz-device-pixel-ratio: 1.5),
+		(-webkit-min-device-pixel-ratio: 1.5),
+		(min-device-pixel-ratio: 1.5),
+		(min-resolution: 144dpi),
+		(min-resolution: 1.5dppx) {
+    /*上、下边框*/
+    .m-bor-t:before,
+    .m-bor-b:after{
+        -webkit-transform:scaleY(.5);
+        -ms-transform:scaleY(.5);
+        -o-transform:scaleY(.5);
+        transform:scaleY(.5);
+    }
+    /*左、右边框*/
+    .m-bor-l:before,
+    .m-bor-r:after{
+        -webkit-transform:scaleX(.5);
+        -ms-transform:scaleX(.5);
+        -o-transform:scaleX(.5);
+        transform:scaleX(.5);
+    }
+    /*四边边框*/
+    .m-bor-all:after{
+        width:200%;
+        height:200%;
+        -webkit-transform:scale(.5);
+        -ms-transform:scale(.5);
+        -o-transform:scale(.5);
+        transform:scale(.5);
+    }
+    /*上、左边框、四边边框*/
+    .m-bor-t:before,
+    .m-bor-l:before,
+    .m-bor-all:after{
+        -webkit-transform-origin:0 0;
+        -moz-transform-origin:0 0;
+        -ms-transform-origin:0 0;
+        -o-transform-origin:0 0;
+        transform-origin:0 0;
+    }
+    /*下、右边框*/
+    .m-bor-b:after,
+    .m-bor-r:after{
+        -webkit-transform-origin:100% 100%;
+        -moz-transform-origin:100% 100%;
+        -ms-transform-origin:100% 100%;
+        -o-transform-origin:100% 100%;
+        transform-origin:100% 100%;
+    }
+}
+
+/* 解决1.5屏幕下某些边框不显式问题、小数位多写几位 */
+@media (-webkit-device-pixel-ratio: 1.5){
+    /*上、下边框*/
+    .m-bor-t:before,
+    .m-bor-b:after{
+        -webkit-transform:scaleY(.66666666);
+        -ms-transform:scaleY(.66666666);
+        -o-transform:scaleY(.66666666);
+        transform:scaleY(.66666666);
+    }
+    /*左、右边框*/
+    .m-bor-l:before,
+    .m-bor-r:after{
+        -webkit-transform:scaleX(.66666666);
+        -ms-transform:scaleX(.66666666);
+        -o-transform:scaleX(.66666666);
+        transform:scaleX(.66666666);
+    }
+    /*四边框*/
+    .m-bor-all:after{
+        width:150%;
+        height:150%;
+        -webkit-transform:scale(.66666666);
+        -ms-transform:scale(.66666666);
+        -o-transform:scale(.66666666);
+        transform:scale(.66666666);
+    }
+}
+
+/* 6plus 、 7plus + 三倍 */
+@media (-webkit-device-pixel-ratio: 3){
+	.m-bor-t:before,
+    .m-bor-b:after,
+    .m-bor-l:before,
+    .m-bor-r:after{
+    	background-color: #ccc;
+    }
+    /*上、下边框*/
+    .m-bor-t:before,
+    .m-bor-b:after{
+        -webkit-transform:scaleY(.33333333);
+        -ms-transform:scaleY(.33333333);
+        -o-transform:scaleY(.33333333);
+        transform:scaleY(.33333333);
+    }
+    /*左、右边框*/
+    .m-bor-l:before,
+    .m-bor-r:after{
+        -webkit-transform:scaleX(.33333333);
+        -ms-transform:scaleX(.33333333);
+        -o-transform:scaleX(.33333333);
+        transform:scaleX(.33333333);
+    }
+    /*四边框*/
+    .m-bor-all:after{
+        width:300%;
+        height:300%;
+        border-color: #ccc;
+        -webkit-transform:scale(.33333333);
+        -ms-transform:scale(.33333333);
+        -o-transform:scale(.33333333);
+        transform:scale(.33333333);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

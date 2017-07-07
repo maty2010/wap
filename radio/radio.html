@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>单选</title>
+    <link rel="stylesheet" type="text/css" href="../css/maty.css">
+
+    <!-- 单选 -->
+    <link rel="stylesheet" type="text/css" href="radio.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">(function appVersion(){window.platform={};var ua=window.navigator.userAgent.toLowerCase();var isIphone=ua.match(/iphone os/i)=="iphone os";var isAndroid=ua.match(/android/i)=="android";var isMobile=ua.match(/mobile/i)=="mobile";var isIpad=ua.match(/ipad/)=="ipad";platform.isMobile=function(){return isMobile&&!isIpad};if(platform.isMobile()){(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window)}})();
+    </script>
+
+    <header class="header">
+        <a href="../index.html" class="back">index</a>
+        <h1 class="h1">单选类 <small>m-name</small></h1>
+    </header>
+    <!-- /header -->
+    <section class="section">
+        <h4 class="h4">单选按钮</h4>
+        <div id="radio">
+			<label class="m-radio">
+				<input type="radio" name="name" value="1">
+				<i class="r-icn"></i>
+				<span class="r-tit">我是单选</span>
+			</label>
+			<label class="m-radio">
+				<input type="radio" name="name" value="1">
+				<i class="r-icn"></i>
+				<span class="r-tit">我是单选</span>
+			</label>
+			<pre class="pre">
+				<code>
+					&lt;label class="m-radio"&gt;
+						&lt;input type="radio" name="name" value="1"&gt;
+						&lt;i class="r-icn"&gt;&lt;/i&gt;
+						&lt;span class="r-tit"&gt;我是单选&lt;/span&gt;
+					&lt;/label&gt;
+				</code>
+			</pre>
+
+			<label class="m-radio">
+				<input type="radio" name="name" value="1" disabled="disabled">
+				<i class="r-icn"></i>
+				<span class="r-tit">禁用样式</span>
+			</label>
+			<pre class="pre">
+				<code>
+					&lt;label class="m-radio"&gt;
+						&lt;input type="radio" name="name" value="1" disabled="disabled"&gt;
+						&lt;i class="r-icn"&gt;&lt;/i&gt;
+						&lt;span class="r-tit"&gt;我是单选&lt;/span&gt;
+					&lt;/label&gt;
+				</code>
+			</pre>
+
+			<label class="m-radio">
+				<input type="radio" name="name" value="1" disabled="disabled" checked="checked">
+				<i class="r-icn"></i>
+				<span class="r-tit">选择的禁用</span>
+			</label>
+			<pre class="pre">
+				<code>
+					&lt;label class="m-radio"&gt;
+						&lt;input type="radio" name="name" value="1" disabled="disabled" checked="checked"&gt;
+						&lt;i class="r-icn"&gt;&lt;/i&gt;
+						&lt;span class="r-tit"&gt;我是单选&lt;/span&gt;
+					&lt;/label&gt;
+				</code>
+			</pre>
+        </div>
+
+        <h4 class="h4">实例</h4>
+        <div id="radio">
+            <label class="m-radio display">
+                <input type="radio" name="name2" value="1">
+                <i class="r-icn"></i>
+                <span class="r-tit">我是单选，我会有很多很多很多很多很多很多很多文字，需要给我添加类'display'</span>
+            </label>
+            <br>
+            <br>
+            <label class="m-radio fr">
+                <input type="radio" name="name2" value="1">
+                <i class="r-icn"></i>
+                <span class="r-tit">我是单选，我会有很多很多很多很多很多很多很多文字，需要给我添加类'fr'</span>
+            </label>
+            <br>
+            <br>
+        </div>
+    </section>
+</body>
+</html>

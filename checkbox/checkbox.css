@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*
+	// @ Css name：复选框
+	// @ Author： matianye@
+	// @ Date： 2017-06-19
+	//==========================
+*/
+
+.m-checkbox {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	font-size: 0;
+	line-height: 1;
+}
+.m-checkbox input{
+	display: none;
+}
+/*模拟的空心圆*/
+.m-checkbox .c-icn{
+	position: relative;
+	display: inline-block;
+	margin-right: .16rem;
+	overflow: hidden;
+	vertical-align: middle;
+	width: .36rem;
+	height: .36rem;
+	border: 1px solid #999;
+	-webkit-border-radius: .06rem;
+	border-radius: .06rem;
+}
+/*点击后的小圆点*/
+.m-checkbox .c-icn:before{
+	content: " ";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 35%;
+	height: 70%;
+	display: none;
+	border: 2px solid #fff;
+	border-top: 0;
+	border-left: 0;
+	-webkit-transform: translate(-50%, -60%) rotate(45deg);
+	transform: translate(-50%, -60%) rotate(45deg);
+}
+.m-checkbox .c-tit{
+	vertical-align: middle;
+	font-size: .28rem;
+	line-height: .4rem;
+}
+/*点击后的样式*/
+.m-checkbox input[type="checkbox"]:checked + .c-icn{
+	border-color: #ff5c5c;
+	background-color: #ff5c5c;
+}
+/*点击后小圆点现实*/
+.m-checkbox input[type="checkbox"]:checked + .c-icn:before{
+	display: block;
+}
+/*禁用样式*/
+.m-checkbox input[type="checkbox"][disabled="disabled"] + .c-icn{
+	border-color: #F4CCCC;
+	background: none;
+}
+/*禁用文字颜色*/
+.m-checkbox input[type="checkbox"][disabled="disabled"] + .c-icn ~ .c-tit{
+	color: #999;
+}
+/*选择的禁用*/
+.m-checkbox input[type="checkbox"][disabled="disabled"][checked="checked"] + .c-icn{
+	border-color: #F4CCCC   ;
+	background-color: #F4CCCC;
+}
+.m-checkbox input[type="checkbox"][disabled="disabled"][checked="checked"] + .c-icn:before{
+	display: block;
+}
+
+/*icn右侧现实*/
+.m-checkbox.display,
+.m-checkbox.fr{
+	display: block;
+	overflow: hidden;
+}
+.m-checkbox.fr .c-icn{
+	margin-left: .14rem;
+	float: right;
+}
+/*块级元素*/
+ .m-checkbox.display{
+	padding-left: .5rem;
+}
+.m-checkbox.display .c-icn{
+	margin-left: -.5rem;
+	float: left;
+}

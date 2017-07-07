@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>按钮</title>
+    <link rel="stylesheet" type="text/css" href="../css/maty.css">
+
+    <!-- 按钮 -->
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <style>
+    </style>
+</head>
+
+<body>
+	<script type="text/javascript">(function appVersion(){window.platform={};var ua=window.navigator.userAgent.toLowerCase();var isIphone=ua.match(/iphone os/i)=="iphone os";var isAndroid=ua.match(/android/i)=="android";var isMobile=ua.match(/mobile/i)=="mobile";var isIpad=ua.match(/ipad/)=="ipad";platform.isMobile=function(){return isMobile&&!isIpad};if(platform.isMobile()){(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window)}})();
+	</script>
+
+    <header class="header">
+        <a href="../index.html" class="back">index</a>
+        <h1 class="h1">按钮类 <small>m-name</small></h1>
+    </header>
+    <!-- /header -->
+    <section class="section">
+        <h4 class="h4">有背景</small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn white">白色按钮</a>
+			<a href="javascript:;" class="m-btn danger">红色按钮</a>
+			<a href="javascript:;" class="m-btn warning">橙色按钮</a>
+			<a href="javascript:;" class="m-btn primary">蓝色按钮</a>
+			<a href="javascript:;" class="m-btn success">绿色按钮</a>
+			<a href="javascript:;" class="m-btn royal">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">禁用</small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn white" disabled="disabled">禁用</a>
+			<a href="javascript:;" class="m-btn danger" disabled="disabled">红色按钮</a>
+			<a href="javascript:;" class="m-btn warning" disabled="disabled">橙色按钮</a>
+			<a href="javascript:;" class="m-btn primary" disabled="disabled">蓝色按钮</a>
+			<a href="javascript:;" class="m-btn success" disabled="disabled">绿色按钮</a>
+			<a href="javascript:;" class="m-btn royal" disabled="disabled">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">有边框无背景  <small>addClass="border" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn danger border" disabled="disabled">红色常规按钮</a>
+			<a href="javascript:;" class="m-btn warning border">橙色按钮</a>
+			<a href="javascript:;" class="m-btn primary border">红色按钮</a>
+		</div>
+
+		<h4 class="h4">直角有背景 <small>addClass="square" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn warning square">橙色按钮</a>
+			<a href="javascript:;" class="m-btn success square" disabled="disabled">绿色按钮</a>
+			<a href="javascript:;" class="m-btn royal square">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">直角有边框 <small>addClass="border square" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn warning border square">橙色按钮</a>
+			<a href="javascript:;" class="m-btn success border square">绿色按钮</a>
+			<a href="javascript:;" class="m-btn royal border square" disabled="disabled">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">块级有背景 <small>addClass="block" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn white block">白色按钮</a>
+		</div>
+
+		<h4 class="h4">块级有边框 <small>addClass="block border" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn warning block border">橙色按钮</a>
+		</div>
+
+		<h4 class="h4">块级直角+背景 <small>addClass="block square" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn success block square">绿色按钮</a>
+		</div>
+
+		<h4 class="h4">大按钮 <small>addClass="large" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn danger large">橙色按钮</a>
+			<a href="javascript:;" class="m-btn warning border large">橙色按钮</a>
+			<a href="javascript:;" class="m-btn success square large">绿色按钮</a>
+			<a href="javascript:;" class="m-btn royal block large" disabled="disabled">紫色按钮</a>
+		</div>
+
+		<h4 class="h4">小按钮 <small>addClass="small" </small></h4>
+		<div id="button">
+			<a href="javascript:;" class="m-btn danger small">按钮</a>
+			<a href="javascript:;" class="m-btn warning border small">黄按钮</a>
+			<a href="javascript:;" class="m-btn success square small">绿色按钮</a>
+			<a href="javascript:;" class="m-btn royal block small" disabled="disabled">紫色按钮</a>
+		</div>
+    </section>
+</body>
+</html>

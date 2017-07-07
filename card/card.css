@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*
+	// @ Css name：网格布局
+	// @ Author： matianye@
+	// @ Date： 2017-06-19
+	//==========================
+*/
+
+.m-card{
+	/*padding: .24rem;*/
+	margin: .24rem ;
+	line-height: 1.5;
+	border: 1px solid #dedede;
+	background-color: #fff;
+	border-radius: .1rem;
+}
+/*常规样式*/
+.m-card .item{
+	padding-top: .16rem;
+	padding-bottom: .16rem;
+	margin-left: .24rem;
+	margin-right: .24rem;
+	border-top: 1px solid #dedede;
+}
+.m-card .item:first-child{
+	padding-top: .24rem;
+	border-top: none;
+}
+.m-card .item:nth-last-child(1){
+	padding-bottom: .24rem;
+}
+.m-card .flex-bd{
+	padding-right: .3rem;
+	font-size: .3rem;
+}
+.m-card .flex-ft{
+	width: 1rem;
+}
+
+/*大图*/
+.m-card .item-big{
+	position: relative;
+	margin: .24rem .24rem .16rem;
+}
+.m-card .item-big .flex-bd{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: .14rem .24rem;
+	color: #fff;
+	font-size: .32rem;
+	background-color: rgba(0, 0, 0, .8);
+}
+
+
+
+/*卡片*/
+.m-card .c-hd{
+	padding: .16rem .24rem;
+	font-size: .32rem;
+	border-bottom: 1px solid #dedede;
+}
+.m-card .c-bd{
+	padding: .24rem;
+	color: #666;
+	font-size: .28rem;
+}
+.m-card .c-bd .date,
+.m-card .c-bd .name{
+	color: #999;
+	font-size: .24rem;
+	margin-top: .1rem;
+}
+.m-card .c-bd .name{
+	text-align: right;
+}
+.m-card .c-ft{
+	padding: .16rem .24rem;
+	font-size: .26rem;
+	color: #666;
+	border-top: 1px solid #dedede;
+}
+
+
+
+
+
+
+
+
+
+
+
+

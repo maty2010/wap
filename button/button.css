@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*
+	// @ Css name：按钮
+	// @ Author： matianye@
+	// @ Date： 2017-06-19
+	//==========================
+*/
+
+.m-btn {
+	position: relative;
+	padding: .2rem .3rem;
+	display: inline-block;
+	min-width: 1.8rem;
+	color: #fff;
+	font-size: .26rem;
+	line-height: 1;
+	text-align: center;
+	vertical-align: top;
+	border: 1px solid transparent;
+	-webkit-border-radius: .6rem;
+	border-radius: .6rem;
+	-webkit-background-origin: border-box;
+	background-origin: border-box;
+}
+
+/*背景颜色*/
+.m-btn.white			{ color:#333; border-color: #d1d1d1; background-color: #fff;}
+.m-btn.danger			{ background-color: #dd524d;}
+.m-btn.warning			{ background-color: #f0ad4e;}
+.m-btn.primary			{ background-color: #007aff;}
+.m-btn.success			{ background-color: #4cd964;}
+.m-btn.royal			{ background-color: #8a6de9;}
+
+/*边框无背景色*/
+.m-btn.border 			{ background: none;}
+.m-btn.white.border 	{ color: #333; border-color: #666;}
+.m-btn.danger.border	{ color: #dd524d; border-color: #dd524d;}
+.m-btn.warning.border	{ color: #f0ad4e; border-color: #f0ad4e;}
+.m-btn.primary.border	{ color: #007aff; border-color: #007aff;}
+.m-btn.success.border	{ color: #4cd964; border-color: #4cd964;}
+.m-btn.royal.border		{ color: #8a6de9; border-color: #8a6de9;}
+
+/*块级元素*/
+.m-btn.block 			{display: block;}
+
+/*直角*/
+.m-btn.square 			{ border-radius: 0;}
+
+/*大按钮*/
+.m-btn.large 			{ padding: .26rem .4rem; font-size: .34rem;}
+
+/*小按钮*/
+.m-btn.small 			{ padding: .14rem .2rem; min-width: 1rem; font-size: .20rem;}
+
+/*禁用*/
+.m-btn.white[disabled="disabled"]			{ background-color: #f9f9f9;}
+.m-btn.danger[disabled="disabled"]			{ background-color: #db6b5b;}
+.m-btn.warning[disabled="disabled"]			{ background-color: #e9ce90;}
+.m-btn.primary[disabled="disabled"]			{ background-color: #6e9cd0;}
+.m-btn.success[disabled="disabled"]			{ background-color: #8cc685;}
+.m-btn.royal[disabled="disabled"]			{ background-color: #8f83ba;}
+
+/*边框按钮禁用去掉背景*/
+.m-btn.white.border[disabled="disabled"]	{ background: none; color: #f9f9f9;}
+.m-btn.danger.border[disabled="disabled"]	{ background: none; color: #db6b5b;}
+.m-btn.warning.border[disabled="disabled"]	{ background: none; color: #e9ce90;}
+.m-btn.primary.border[disabled="disabled"]	{ background: none; color: #6e9cd0;}
+.m-btn.success.border[disabled="disabled"]	{ background: none; color: #8cc685;}
+.m-btn.royal.border[disabled="disabled"]	{ background: none; color: #8f83ba;}
+

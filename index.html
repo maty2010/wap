@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="css/maty.css">
+    <style type="text/css">
+    section{padding-top: 1rem;}
+    /*ul{padding: .3rem;}*/
+    li{position:relative;padding-left: .36rem;}
+    li:before{content:"";position: absolute;right:0;bottom:0;left: .2rem;height: 1px;background-color: #e8e8e8;-webkit-transform: scaleY(.5);transform: scaleY(.5);}
+    li:after{content: "";
+            position: absolute;
+            top: .38rem;
+            left: .1rem;
+            display: block;
+            width: .2rem;
+            height: .2rem;
+            border: 1px solid #666;
+            border-bottom: 0;
+            border-left: 0;
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);}
+    a{display: block;padding: .26rem .2rem;font-size: .32rem;}
+    </style>
+</head>
+<body>
+    <script type="text/javascript">(function appVersion(){window.platform={};var ua=window.navigator.userAgent.toLowerCase();var isIphone=ua.match(/iphone os/i)=="iphone os";var isAndroid=ua.match(/android/i)=="android";var isMobile=ua.match(/mobile/i)=="mobile";var isIpad=ua.match(/ipad/)=="ipad";platform.isMobile=function(){return isMobile&&!isIpad};if(platform.isMobile()){(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window)}})();</script>
+    <header class="header">
+        <h1 class="h1">常用</h1>
+    </header>
+    <!-- /header -->
+    <section>
+        <ul class="index-list">
+            <li><a href="a.pdf">pdf</a></li>
+            <li><a href="arrow/arrow.html">方向箭头</a></li>
+            <li><a href="border/border.html">边框0.5px</a></li>
+            <li><a href="button/button.html">按钮</a></li>
+            <li><a href="radio/radio.html">单选</a></li>
+            <li><a href="checkbox/checkbox.html">复选</a></li>
+            <li><a href="switch/switch.html">开关</a></li>
+            <li><a href="tab/tab.html">tab/菜单</a></li>
+            <li><a href="address/address.html">城市列表</a></li>
+            <li><a href="address/address2.html">城市列表-字母选择</a></li>
+            <li><a href="captcha/captcha.html">验证码</a></li>
+            <li><a href="card/card.html">卡片信息</a></li>
+            <li><a href="grid/grid.html">网格布局</a></li>
+        </ul>
+    </sectino>
+</body>
+</html>

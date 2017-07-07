@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*
+	// @ Css name：开关
+	// @ Author： matianye@
+	// @ Date： 2017-06-19
+	//==========================
+*/
+
+.m-switch{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 1.2rem;
+	height: .6rem;
+	cursor: pointer;
+	border: 1px solid #e4e4e4;
+	background-color: #fff;
+	border-radius: .6rem;
+	-webkit-appearance: none;
+	-webkit-user-select: none;
+	outline: none;
+}
+.m-switch:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: .58rem;
+	height: .56rem;
+	border-radius: .58rem;
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+.m-switch:checked{
+	border-color: #4cd964;
+	background-color: #4cd964;
+}
+.m-switch:checked:before{
+	left: .58rem;
+}
+
+/*带有开关提示文字*/
+.m-switch-txt{
+	width: 1.5rem;
+}
+.m-switch-txt:checked:before{
+	left: .88rem;
+}
+.m-switch-txt:after{
+	content: "OFF";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: .86rem;
+	color: #666;
+	font-size: .28rem;
+	line-height: .6rem;
+	text-align: center;
+}
+.m-switch-txt:checked:after{
+	content: "ON";
+	right: auto;
+	left: 0;
+	color: #fff;
+}
+
+/*动效*/
+.m-switch-anime{
+	/*transition: background-color 0.2s ease-out;*/
+	transition: border-color .4s,background-color ease .4s
+}
+.m-switch-anime:before{
+	transition: left 0.3s;
+}
