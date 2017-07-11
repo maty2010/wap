@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <title>二级页面</title>
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/weui.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/mine-lazy.js"></script>
+</head>
+<body class="mui-ios mui-ios-9 mui-ios-9-1">
+	<script>
+        // rem根元素自适应
+        (function () {
+            var baseFontSize = 100;
+            var baseWidth = 375;
+            var clientWidth = document.documentElement.clientWidth || window.innerWidth;
+            var innerWidth = Math.max(Math.min(clientWidth, 480), 320);
+            var rem = 100;
+            rem = Math.floor(innerWidth / baseWidth * baseFontSize);
+            document.querySelector('html').style.fontSize = rem + 'px';
+        }());
+    </script>
+    <!-- 头部横条开始 -->
+    <div class="bread-blank"></div>
+    <div class="bread tc clearfix">
+        <a class="tip l linkssss" href="##"><i class="iconfont f20"></i></a>
+        <div class="logo">二级页面</div>
+    </div>
+    <!-- 头部横条结束 -->
+    <!-- 页面主体 开始-->
+    <!--banner-->
+    <div class="top-banner">
+        <a href="##"><img src="images/2017621884618.jpg" alt=""></a>
+    </div>
+    <!--main-->
+    <div class="sub-main">
+        <div class="sub-nav clearfix">
+            <div class="fl">
+                <div class="page">
+                    <div class="page__bd page__bd_spacing">
+                        <a href="javascript:;" class=" weui-btn_default" id="showAndroidActionSheet">
+                            <i class="iconfont style-btn"></i><span>闭幕式</span>
+                        </a>
+                    </div>
+                    <!--BEGIN actionSheet-->
+                    <div class="weui-skin_android" id="androidActionsheet" style="display: none">
+                        <div class="weui-actionsheet">
+                            <div class="weui-actionsheet__menu clearfix">
+                                <div class="bread tc clearfix">
+                                    <a class="tip l lj linkssss" href="##"><i class="iconfont f20"></i></a>
+                                    <div class="logo">全部栏目</div>
+                                </div>
+                                <div class="lanmu clearfix">
+                                    <ul>
+                                        <li><a class="lj linkssss" href="##">开幕式</a></li>
+                                        <li><a class="lj linkssss" href="##">闭幕式</a></li>
+                                        <li><a class="lj linkssss" href="##">文艺汇演</a></li>
+                                        <li><a class="lj linkssss" href="##">精彩瞬间</a></li>
+                                        <li><a class="lj linkssss" href="##">专家风采</a></li>
+                                        <li><a class="lj linkssss" href="##">分会场风采</a></li>
+                                        <li><a class="lj linkssss" href="##">呼吸公益跑</a></li>
+                                        <li><a class="lj linkssss" href="##">卫星会</a></li>
+                                        <li><a class="lj linkssss" href="##">领导巡展</a></li>
+                                        <li><a class="lj linkssss" href="##">讲者面对面</a></li>
+                                        <li><a class="lj linkssss" href="##">媒体采访</a></li>
+                                        <li><a class="lj linkssss" href="##">扫码入场</a></li>
+                                        <li><a class="lj linkssss" href="##">颁奖</a></li>
+                                        <li><a class="lj linkssss" href="##">花絮</a></li>
+                                        <li><a class="lj linkssss" href="##">嘉宾休息室</a></li>
+                                        <li><a class="lj linkssss" href="##">大会展览</a></li>
+                                        <li><a class="lj linkssss" href="##">注册接待</a></li>
+                                        <li><a class="lj linkssss" href="##">主会场</a></li>
+                                        <li><a class="lj linkssss" href="##">回顾区</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!--END actionSheet-->
+                    </div>
+                <script type="text/javascript">
+                    // android
+                    $(function () {
+                        var $androidActionSheet = $('#androidActionsheet');
+                        var $androidMask = $androidActionSheet.find('.weui-mask');
+                        var $perLi = $androidActionSheet.find('li');
+
+                        $("#showAndroidActionSheet").on('click', function () {
+                            $androidActionSheet.fadeIn(200);
+                            $androidMask.on('click', function () {
+                                $androidActionSheet.fadeOut(200);
+                            });
+
+                            $perLi.on("click", function () {
+                                $androidActionSheet.fadeOut(200);
+                            })
+
+                        });
+                    });
+                </script>
+            </div>
+          
+        </div>
+        <!--图片列表-->
+        <div class="mui-content" id="imglist">
+            <div class="mui-content-padded">
+                <ul class="clearfix">
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/201762514983.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/201762514983.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/201762514983_big.jpg" data-preview-group="1" alt="" data-size="7166kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7677" style="position: relative; display: table; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/201762514983.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/2017625665378.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/2017625665378.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/2017625665378_big.jpg" data-preview-group="1" alt="" data-size="6199kb" data-zan="1" class="lazyloading" data-zan-on="false" data-mid="7678" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/2017625665378.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/2017625555732.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/2017625555732.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/2017625555732_big.jpg" data-preview-group="1" alt="" data-size="6210kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7679" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/2017625555732.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/201762593032.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/201762593032.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/201762593032_big.jpg" data-preview-group="1" alt="" data-size="6162kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7680" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/201762593032.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/2017625649156.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/2017625649156.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/2017625649156_big.jpg" data-preview-group="1" alt="" data-size="5610kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7681" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/2017625649156.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/2017625618260.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/2017625618260.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/2017625618260_big.jpg" data-preview-group="1" alt="" data-size="5658kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7682" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/2017625618260.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/2017625993835.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/2017625993835.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/2017625993835_big.jpg" data-preview-group="1" alt="" data-size="5217kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7683" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/2017625993835.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/201762519637.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/201762519637.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/201762519637_big.jpg" data-preview-group="1" alt="" data-size="7907kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7684" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/201762519637.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2320" src="images/2017625868428.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/2017625868428.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/2017625868428_big.jpg" data-preview-group="1" alt="" data-size="5363kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7685" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/2017625868428.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2321" src="images/201762550931.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/201762550931.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/201762550931_big.jpg" data-preview-group="1" alt="" data-size="7505kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7686" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/201762550931.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2321" src="images/201762525275.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/201762525275.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/201762525275_big.jpg" data-preview-group="1" alt="" data-size="7763kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7687" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/201762525275.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2321" src="images/201762524574.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/201762524574.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/201762524574_big.jpg" data-preview-group="1" alt="" data-size="5893kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7688" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/201762524574.jpg"></div>
+				  </li>
+				  <li>
+				    <div class="loading" lazyloading_hasheight="1"><img v="2321" src="images/2017625462546.jpg" data-original="http://www.medmeeting.org/upload/show/4603/201706/2017625462546.jpg" data-preview-src="http://www.medmeeting.org/upload/show/4603/201706/2017625462546_big.jpg" data-preview-group="1" alt="" data-size="5895kb" data-zan="0" class="lazyloading" data-zan-on="false" data-mid="7689" style="display: table; position: relative; margin: 0px auto; opacity: 1;" width="100%" height="100%"><img class="loadhiddenimg" width="0" height="0" style="display:none;" src="images/2017625462546.jpg"></div>
+				  </li>
+				</ul>
+
+            </div>
+
+        </div>
+        <!--懒加载-->
+        <script type="text/javascript">
+            $(function () {
+                $(".mui-content .mui-content-padded ul>li img.lazyloading").lazyloading({ loadfirst: true });
+            })
+        </script>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.zoom.js"></script>
+    <script src="js/mui.previewimage.js"></script>
+    <!-- 图册开始 -->
+    <script>
+        mui.previewImage({
+            footer: "<div class='picinfo'><span class='view-big' id='view-big'>查看原图</span><p class='info'><i class='iconfont'>&#xe666;</i>（原图大小<span id='img_size'>356kb</span>）长按保存图片</p><div class='zan'><div class='dianzan'><i class='iconfont'>&#xe660;</i><span class='num' id='zan_num'>55</span></div><div class='add1'><span>+1</span></div></div></div>"
+        });
+    </script>
+    <div id="__MUI_PREVIEWIMAGE" class="mui-slider mui-preview-image mui-fullscreen"><div class="mui-preview-header"><span class="mui-preview-indicator"></span></div><div class="mui-slider-group"></div><div class="mui-preview-footer"><div class="picinfo"><span class="view-big" id="view-big">查看原图</span><p class="info"><i class="iconfont"></i>（原图大小<span id="img_size">356kb</span>）长按保存图片</p><div class="zan"><div class="dianzan"><i class="iconfont"></i><span class="num" id="zan_num">55</span></div><div class="add1"><span>+1</span></div></div></div></div><div class="mui-preview-loading"><span class="mui-spinner mui-spinner-white"></span></div></div>
+    <!--App自定义的css-->
+    <style type="text/css">.mui-preview-image.mui-fullscreen{position:fixed;z-index:20;background-color:#000}.mui-preview-footer,.mui-preview-header{position:absolute;width:100%;left:0;z-index:10}.mui-preview-header{height:44px;top:.5rem}.mui-preview-footer{color:#fff}.mui-preview-header .mui-preview-indicator{display:block;line-height:25px;color:#fff;text-align:center;margin:15px auto 4px;width:70px;background-color:rgba(0,0,0,.4);border-radius:9pt;font-size:1pc}.mui-preview-image{display:none;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.mui-preview-image.mui-preview-in{-webkit-animation-name:fadeIn;animation-name:fadeIn}.mui-preview-image.mui-preview-out{background:0 0;-webkit-animation-name:fadeOut;animation-name:fadeOut}.mui-preview-image.mui-preview-out .mui-preview-footer,.mui-preview-image.mui-preview-out .mui-preview-header{display:none}.mui-zoom-scroller{position:absolute;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;left:0;right:0;bottom:0;top:0;width:100%;height:100%;margin:0;-webkit-backface-visibility:hidden}.mui-zoom{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.mui-slider .mui-slider-group .mui-slider-item img{width:auto;height:auto;max-width:100%;max-height:100%}.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img{width:100%}.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item{display:inline-table}.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img{display:table-cell;vertical-align:middle}.mui-preview-loading{position:absolute;width:100%;height:100%;top:0;left:0;display:none}.mui-preview-loading.mui-active{display:block}.mui-preview-loading .mui-spinner-white{position:absolute;top:50%;left:50%;margin-left:-25px;margin-top:-25px;height:50px;width:50px}.mui-preview-image img.mui-transitioning{-webkit-transition:-webkit-transform .5s ease,opacity .5s ease;transition:transform .5s ease,opacity .5s ease}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}p img{max-width:100%;height:auto}.mui-preview-footer{bottom:.1rem}.picinfo{color:#b3b3b3;padding:0 .15rem;font-size:.14rem;position:relative}.picinfo .view-big{display:inline-block;width:.8rem;line-height:.24rem}.picinfo .big-on,.picinfo .view-big{border-radius:4px;border:1px solid #b3b3b3;height:.25rem;box-sizing:border-box;text-align:center}.picinfo .big-on{display:inline-block;width:1.2rem;line-height:.25rem;display:none}.picinfo .info{margin-top:.08rem;font-size:.15rem}.picinfo .info i{font-size:.2rem;vertical-align:sub}.picinfo .zan{position:fixed;right:.2rem;bottom:.3rem;border-radius:100%;border:1px solid #b3b3b3;padding-top:.1rem;width:.6rem;height:.6rem;line-height:.2rem;box-sizing:border-box;text-align:center}.picinfo .zan-on{color:#ed4141!important;border-color:#ed4141}.picinfo .zan .num{display:block}.picinfo .zan .add1{position:absolute;top:-.2rem;left:50%;margin-left:-.07rem;opacity:0}@-webkit-keyframes chagezan{0%{opacity:0;top:-.2rem}50%{opacity:1;top:-.5rem}90%{opacity:0;top:-.7rem}}.picinfo .zan .add1.add-active{color:#ed4141;-webkit-animation-name:chagezan;-webkit-animation-duration:2s;-webkit-animation-iteration-count:1;-webkit-animation-delay:0s}</style>
+    <script>
+        /*查看大图*/
+        var $big = $(".picinfo .view-big ");
+
+        $big.on("click", function() {
+            var MVP = mui.previewImage();
+            var currentIdx = MVP.lastIndex;
+            var currentImg = MVP.currentGroup[currentIdx];
+            var imgLists = $(".mui-slider-item").find("img");
+
+            var itemEl=$('.mui-slider-item:nth-child(' + (currentIdx + 1) + ')')[0]
+            var imgEl = itemEl.getElementsByTagName("img")[0]
+            console.log(imgEl)
+            // currentImg.loaded_normal = true;
+            // imgLists[currentIdx].src = currentImg.lazyload;
+
+            // MVP.refresh(currentIdx, MVP.currentGroup);
+            // $(MVP.loader).removeClass('mui-active');
+            $(MVP.loader).addClass('mui-active');
+            MVP.loadImage(imgEl, function() {
+                currentImg.loaded = true;
+                imgEl.src = currentImg.lazyload;
+                MVP._initZoom(itemEl, this.width, this.height);
+                $(imgEl).addClass('mui-transitioning');
+                imgEl.addEventListener('webkitTransitionEnd', MVP._imgTransitionEnd.bind(MVP));
+                imgEl.setAttribute('style', '');
+                imgEl.offsetHeight;
+                $(MVP.loader).removeClass('mui-active');
+                document.getElementById('view-big').innerHTML="已加载原图"
+                // MVP.refresh(currentIdx, MVP.currentGroup);
+            });
+
+            // console.log(currentImg.loaded);
+            // console.log(currentImg);
+            // console.log(imgLists[currentIdx]);
+        })
+
+        function addView() {
+            // 添加浏览量
+            $.ajax({
+                url: "/Ajax/AddBrowses2/?id=" +7561 ,
+                         cache: false,
+                         success: function (html) {
+                             console.log(html)
+                                    }
+                                });
+        }
+        /*关闭*/
+        var close = $("#__MUI_PREVIEWIMAGE");
+        //监听点击事件
+        close[0].addEventListener("tap", function () {
+            if ($zanBtn.attr("class")) {
+                if ($zanBtn.attr("class").indexOf('zan-on') > 0) {
+                    $add1.removeClass('add-active');
+                }
+            }
+        });
+        /*a点击事件*/
+        mui('body').on('tap', 'a.linkssss', function () { document.location.href = this.href; });
+    </script>
+    <!--图册结束-->
+    <!-- 页面主体 结束-->
+    <!-- 底部开始 -->
+    <div class="weui-footer">
+        <p class="weui-footer__links">
+            <a href="http://www.medmeeting.org/wap/index" class="weui-footer__link">技术支持</a>
+        </p>
+    </div>
+    <!-- 底部结束 -->
+</body>
+</html>
