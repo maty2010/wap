@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="wap-font-scale" content="no">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+    <script type="text/javascript">
+      (function(){
+      	var meta = document.createElement('meta')
+      	meta.setAttribute('name','viewport')
+      	var devicePixelRatio = window.devicePixelRatio
+      	var dpr = devicePixelRatio ? (1 / devicePixelRatio) : 1
+      	if(window.screen.availWidth == document.documentElement.offsetWidth){
+      		dpr = 1
+      		devicePixelRatio = 1
+      	}
+      	document.documentElement.setAttribute('data-dpr', devicePixelRatio || 1)
+      	if(window.navigator.userAgent.match(/android/i)){
+      		meta.setAttribute('content', 'width=device-width, initial-scale='+ dpr +', maximum-scale='+ dpr +', minimum-scale=' + dpr + ', user-scalable=no')
+      	}else{
+      		meta.setAttribute('content', 'initial-scale='+ dpr +', maximum-scale='+ dpr +', minimum-scale=' + dpr + ', user-scalable=no')
+      	}
+      	document.head.appendChild(meta)
+      })()
+    </script>
+    <script type="text/javascript">
+      var dpr = document.documentElement.getAttribute('data-dpr') || 1
+      var width = document.documentElement.offsetWidth
+      var fontSize = 100/750 * width;
+      document.querySelector('html').style.fontSize = (fontSize)+'px';
+      window.addEventListener('resize',function(){
+      	var width = document.querySelector('html').offsetWidth;
+      	var fontSize = 100/750 * width;
+      	document.querySelector('html').style.fontSize = (fontSize)+'px';
+      })
+    </script>
+  <style type="text/css">
+    *{padding: 0;margin: 0;}
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+    header{
+      padding: 1rem;
+    }
+    p{
+      margin-top: .2rem;
+      padding-left: .1rem;
+      padding-right: .1rem;
+      height: 30px;
+      color: #fff;
+      line-height: 30px;
+      background-color: rgba(0, 0, 0, .9);
+    }
+    .p0{
+      font-size: .16rem;
+    }
+    .p1{
+      font-size: .20rem;
+    }
+    .p2{
+      padding-top: .05rem;
+      padding-bottom: .05rem;
+      font-size: .22rem;
+    }
+    .p3{
+      padding-top: .1rem;
+      padding-bottom: .1rem;
+      font-size: .24rem;
+    }
+    .p4{
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+      font-size: .28rem;
+    }
+
+  </style>
+  </head>
+  <body>
+    
+    <header>
+      <p class="p0">我是8px的文字哦</p>
+      <p class="p1">我是10px的文字哦</p>
+      <p class="p2">我是11px的文字哦</p>
+      <p class="p3">我是12px的文字哦</p>
+      <p class="p4">我是14px的文字哦</p>
+    </header>
+
+  </body>
+</html>
